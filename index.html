@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="game.js"></script>
+</head>
+<body>
+<div class="main" style="width:70%; float:left; padding:15px; -moz-box-sizing: border-box;">
+	<div class="paso-1">
+		<p class="historia general">
+			Despiertas aturdido y un poco desorientado, ¡Valla borrachera! ¿Como te llamas?
+		</p>
+			<input type="text" name="nombre-p">
+			<button class="listo">Listo</button>
+	</div>
+	<div class="paso-2" style="display:none;">
+		<p class="historia n">
+			Hola, 
+		</p>
+		<p class="historia general">
+			Te encuentras en una cabaña, un poco de luz se cuela entre las separaciones de la madera, y hay un fuerte olor a humedad presente, a lo lejos oyes
+			el correr de un rio. Miras a tu alrededor y tres cosas llaman tu atención de una manera especial. Una espada cuelga de la pared, un hacha está recostada
+			a la mesa de noche y un bastón con una extraña roca esta apoyado en el rincón, ¿Cual deseas agarrar?. 
+		</p>
+			<input type="text" name="objeto">
+			<button class="listo">Listo</button>
+	</div>
+	<div class="paso-3" style="display:none;">
+		<p class="historia arma1">
+			Por ahora este es el final, pero haz escogido un arma excepcinal como lo es tu 
+		</p>
+		<p class="historia general">
+			Quisiera continuar con la historia, pero esto es un hobbie, cada tiempo libre la continuaré, gracias por imaginar.
+		</p>
+	</div>
+</div>
+
+<div class="tools" style="width:30%; border:#555 solid; float:left; padding:15px; -moz-box-sizing: border-box;">
+	<span>El n&uacute;mero es: </span><p class="numero"></p>
+	<span>Veces que se ha lanzado el dado: </span><p class="lanzados"></p>
+	
+	<!-- Para Debug
+	<span>Verificar Lados: </span><p class="seg"></p>
+	-->
+
+	<button id="dadojs20">Lanzar dado de 20 Caras</button>
+</div>
+</body>
+</html>
